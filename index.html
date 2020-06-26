@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gabi C Web developer</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="box">
+    <nav class="top-Navigation" id="top-Navigation">
+      <img class="logo" width="70px" height="70px" src="img/logo.png" alt="logo"/>
+    <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()"><span class="hamburger-icon"></span></div>
+    <ul class="desktop-menu" id="desktop-menu">
+        <a onclick="scrollToElement(portfolio)"><li>Portfolio</li></a>
+        <a onclick="scrollToElement(aboutMe)"><li>About</li></a>
+        <a onclick="scrollToElement(contact)"><li>Contact</li></a>
+      </ul>
+      <div class="overlay" id="overlay">
+        <ul class="mobile-menu" id="mobile-menu">
+            <a onclick="scrollToElement(portfolio)"><li>Portfolio</li></a>
+            <hr class="mobile-menu-hr"/>
+            <a onclick="scrollToElement(aboutMe)"><li>About</li></a>
+            <hr class="mobile-menu-hr"/>
+            <a onclick="scrollToElement(contact)"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <!-- Intro -->
+    <div id="intro" class="intro">
+      <h1 style="text-transform:uppercase; text-align:center;" class="intro-name" id="intro-name">Gabriella Csernus</h1>
+      <p class="intro-description" id="intro-description">I am a London based, Junior Web Developer</p>
+      <a onclick="scrollToElement(portfolio)"><button class="multi-button" id="intro-button">Check my work</button></a>
+    </div>
+  </div>
+    <!-- Portfolio -->
+    <div class="portfolio" id="portfolio">
+      <h1 class="section-title">Portfolio</h1>
+      <p class="portfolio-introduction">Below you can browse some of the projects I've been working on.</p>
+
+    <!-- Portfolio example -->
+
+      <h2 class="project-title">React Calculator</h2>
+      <hr />
+      <p class="project-description">Calculator built with React.JS</p>
+      <a href="https://github.com/csgabka/React-calculator" target="blank"><button class="project-button">View source code</button></a>
+      <a href="https://csgabka.github.io/React-calculator/" target="blank"><button class="project-button">Visit online</button></a>
+      <img class="project-img" src="img/projects/calculator.jpg" alt="calculator" />
+    </div>
+    <!-- About me -->
+    <div class="about-me" id="about-me">
+      <h1 class="section-title">About me</h1>
+      <p>I consider myself as a self-taught Junior Web Developer.</p><br/ >
+      <p>Although I have a Bachelor's degree in Computer Engineering (2010), I have worked
+        in hospitality as a Store Manager in the last 10 years. In 2020 I have decided to get back onto the path what I really enjoy and mainly and most importantly gives
+        me opportunity to learn something new every day.</p><br />
+      <p>I have spent several months learning online. The area which mainly interest me is Front End Development.</p>
+    </div>
+    <!-- Contact me -->
+    <div class="contact-me" id="contact">
+      <h1 class="section-title">Get in touch</h1>
+      <p> If you like what you see get in touch</p>
+      <a href="mailto:csgabka@gmail.com"><button class="multi-button">Get in touch</button></a>
+        <!-- Social media buttons -->
+        <div class="social-media">
+          <a class="soc-med" href="https://www.facebook.com/csgab" target="blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+          <a class="soc-med" href="https://www.instagram.com/csgabka87/" target="blank"><i class="fa fa-lg fa-instagram" aria-hidden="true"></i></a>
+          <a class="soc-med" href="https://github.com/csgabka" target="blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i></i></a>
+          <a class="soc-med" href="https://www.freecodecamp.org/fcc88431d77-4f70-43a8-bc84-06a42f01532d" target="blank"><i class="fa fa-lg fa-free-code-camp" aria-hidden="true"></i></i></a>
+        </div>
+    </div>
+
+    <!-- Copyrights -->
+    <div class="copyright">
+      <p class="footer">© 2020 Gabriella Csernus. Made in London</p>
+    </div>
+    <script src="https://use.fontawesome.com/bf9404ecbf.js"></script>
+    <script src="script/script.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+</html>
