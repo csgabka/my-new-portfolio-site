@@ -181,9 +181,17 @@ hr {
   width: 80%;
 }
 
+.about-me h1 {
+  color: #FFF;
+}
+
 .about-me {
-  background-size: contain;
-  background-image: url("../img/bg-grid/02.jpg");
+  color: #fff;
+  background-color: #a70aa7;
+  background-image: url("../img/grid-bg2.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+
 }
 
 .mobile-menu {
@@ -192,7 +200,7 @@ hr {
 
 .contact-me {
   min-height: 80vh;
-  background-color: #f4b5f4;
+  background-color: #D5B5F5;
   box-shadow: 1px 1px 10px #919090;
 }
 
