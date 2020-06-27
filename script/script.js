@@ -6,11 +6,17 @@ let navigation = document.getElementById("top-Navigation");
 let portfolio = document.getElementById("portfolio");
 let aboutMe = document.getElementById("about-me");
 let contact = document.getElementById("contact");
+let loader = document.getElementById("loader");
+let pageWrapper = document.getElementById("page-wrapper");
 var mq = window.matchMedia('@media all and (max-width: 769px)');
 let navHeight = 180;
 let direction = -1000;
 let showMenu = false;
 
+window.onload = () => {
+  loader.style.display = "none";
+  pageWrapper.style.display = "block";
+}
 
 window.onscroll = () => {
   showIntroElements();

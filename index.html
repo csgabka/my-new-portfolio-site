@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="style/index.css">
   </head>
   <body>
+    <div class="loader" id="loader">
+      <span></span>
+    </div>
+    <div class="page-wrapper" id="page-wrapper">
     <!-- Navigation -->
     <div class="box">
     <nav class="top-Navigation" id="top-Navigation">
@@ -54,12 +58,15 @@
     </div>
     <!-- About me -->
     <div class="about-me" id="about-me">
-      <h1 class="section-title">About me</h1>
-      <p>I consider myself as a self-taught Junior Web Developer.</p><br/ >
-      <p>Although I have a Bachelor's degree in Computer Engineering (2010), I have worked
-        in hospitality as a Store Manager in the last 10 years. In 2020 I have decided to get back onto the path what I really enjoy and mainly and most importantly gives
-        me opportunity to learn something new every day.</p><br />
-      <p>I have spent several months learning online. The area which mainly interest me is Front End Development.</p>
+        <div class="backdrop">
+        <h1 class="section-title">About me</h1>
+        <p>I am a Computer Engineer (BSc) - graduated in 2010.</p><br/ >
+        <p>Despite of this I have worked in hospitality as a Store Manager in the last 10 years.
+        In 2020 I have decided to get back onto the path what I really enjoy - and mainly and most importantly - gives
+          me the opportunity to learn something new every day.<br />
+        <p>I have spent several months learning online, self-teaching about the most recent technologies.</p>
+        <p>The area which mainly interest me is Front End Web Development.</p>
+      </div>
     </div>
     <!-- Contact me -->
     <div class="contact-me" id="contact">
@@ -79,6 +86,7 @@
     <div class="copyright">
       <p class="footer">© 2020 Gabriella Csernus. Made in London</p>
     </div>
+  </div>
     <script src="https://use.fontawesome.com/bf9404ecbf.js"></script>
     <script src="script/script.js"></script>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
