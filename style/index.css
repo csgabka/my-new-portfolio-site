@@ -120,6 +120,10 @@ hr {
   transition: 0.5s all ease-in-out;
 }
 
+a {
+  transition: 0.5s all ease-in-out;
+}
+
 /* Portfolio */
 
 .portfolio, .about-me, .contact-me {
@@ -335,6 +339,18 @@ i:hover {
 .about-me {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
 }
 
 
