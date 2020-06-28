@@ -44,7 +44,6 @@ updateNavigationDesign = () => {
 
 showIntroElements = () => {
   for (let i = 0; i < introElements.length; i++) {
-    console.log(introElements[i]);
     if (introElements[i].offsetTop <= navHeight + scrollY) {
       introElements[i].style.opacity = 0;
       introElements[i].style.transform = "translate(1000px)";
