@@ -12,16 +12,16 @@
 // let showMenu = false;
 //
 //
-// ready = (callbackFunction) => {
-//   if(document.readyState != 'loading')
-//     callbackFunction(event)
-//   else
-//     document.addEventListener("DOMContentLoaded", callbackFunction)
-// }
-//
-// ready(event => {
-//     document.getElementsByTagName("html")[0].style.visibility = "visible";
-// })
+ready = (callbackFunction) => {
+  if(document.readyState != 'loading')
+    callbackFunction(event)
+  else
+    document.addEventListener("DOMContentLoaded", callbackFunction)
+}
+
+ready(event => {
+    document.getElementsByTagName("html")[0].style.visibility = "visible";
+})
 //
 // window.onscroll = () => {
 //   showIntroElements();
