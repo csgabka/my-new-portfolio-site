@@ -54,22 +54,6 @@ showIntroElements = () => {
   }
 }
 
-//show-hide intro node elements
-// showIntroElements = () => {
-// for (let i = 0; i < introElements.length; i++ ) {
-//   console.log('offsettop: ' + introElements[i].offsetTop);
-//   console.log('scrollY' + scrollY);
-//   if (introElements[i].offsetTop <= navHeight + scrollY) {
-//     (direction === -1000) ? (direction = 1000) : (direction = -1000)
-//     introElements[i].style.opacity = 0;
-//     introElements[i].style.transform = "translate(" + direction + "px)";
-//   } else {
-//     introElements[i].style.opacity = 1;
-//     introElements[i].style.transform = "translate(0)";
-//   }
-// }
-// }
-
 toggleMenu = () => {
   if (showMenu === false) {
     mobileMenu.style.top = "160px";
