@@ -8,6 +8,7 @@
 html { visibility: hidden; }
 
 html, body {
+  position: relative;
   overflow-x: hidden;
   font-family: 'Dosis', sans-serif;
   background-color: #FFF;
