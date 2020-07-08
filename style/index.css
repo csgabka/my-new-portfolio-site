@@ -7,9 +7,8 @@
 
 html { visibility: hidden; }
 
-body {
+html, body {
   overflow-x: hidden;
-  -webkit-backface-visibility: hidden;
   font-family: 'Dosis', sans-serif;
   background-color: #FFF;
   color: #807F7F;
