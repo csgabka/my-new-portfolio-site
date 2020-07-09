@@ -71,6 +71,10 @@ p {
   font-size: 22px;
 }
 
+p.about {
+  text-align: left;
+}
+
 hr {
    width: 50px;
    margin: auto;
