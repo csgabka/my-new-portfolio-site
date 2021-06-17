@@ -134,8 +134,8 @@ a {
 /* Portfolio */
 
 .portfolio, .about-me, .contact-me {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 100px;
   padding-bottom: 15%;
   min-height: 100vh;
@@ -367,15 +367,7 @@ i:hover {
 .slick-arrow:hover {
   cursor: pointer;
 }
- 
 
-.slick-prev {
-  left: 50px;
-}
-
-.slick-next {
-  right: 50px;
-}
 
 @media screen and (max-width: 1260px) {
   .slick-next {
@@ -421,27 +413,24 @@ i:hover {
 }
 
 @media screen and (max-width: 960px) {
-  .slick-next {
-    right: -50px;
-  }
-
-  .slick-prev {
-    left: -50px;
-  }
-
-  .card {
+  /* .card {
     width: 531px;
     height: 398px;
-  }
+  } */
 
   
 }
 
 @media screen and (max-width: 769px) {
 
-  .card {
+  /*.card {
     width: 428px;
     height: 320px;
+  }*/
+
+  .card {
+    width: 531px;
+    height: 398px;
   }
 
   .desktop-menu {
@@ -596,9 +585,14 @@ p {
   }
 
   .card {
+    width: 413px;
+    height: 309px;
+  }
+
+  /*.card {
     width: 336px;
     height: 248px;
-  }
+  }*/
 
   .project-description {
     top: 50px;
@@ -613,9 +607,14 @@ p {
 @media screen and (max-width: 480px) {
 
   .card {
+    width: 309px;
+    height: 228px;
+  }
+
+  /*.card {
     width: 240px;
     height: 174px;
-  }
+  }*/
 
   .slick-arrow {
     top: 150px;
@@ -624,6 +623,7 @@ p {
   .project-description {
     top: 0px;
     font-size: 15px;
+    max-width: 200px;
   }
 
   .project-button {
@@ -638,6 +638,10 @@ p {
   .card {
     width: 206px;
     height: 156px;
+  }
+
+  .project-description {
+    max-width: 150px;
   }
   
 
