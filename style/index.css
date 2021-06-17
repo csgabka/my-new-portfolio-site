@@ -27,11 +27,12 @@ html, body {
   height: 100px;
   text-transform: uppercase;
   display: flex;
+  z-index: 999;
 }
 
 .logo {
   border-radius: 50px;
-  transition: 1s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .logo:hover {
@@ -73,6 +74,7 @@ p {
 
 p.about {
   text-align: left;
+  margin-bottom: 10px;
 }
 
 hr {
@@ -141,11 +143,6 @@ a {
   text-align: center;
 }
 
-.portfolio {
-  padding-bottom: 0;
-}
-
-
 .section-title {
   text-transform: uppercase;
   color: #3B3838;
@@ -162,35 +159,138 @@ a {
 }
 
 .project-description {
+  color: #FFFFFF;
+  position: relative;
+  margin: auto;
+  top: 100px;
+  z-index: 1;
+  opacity: 1;
   padding-top: 22px;
+  -moz-transition: all 0.5s ease-in-out;  /* FF4+ */
+  -o-transition: all 0.5s ease-in-out;  /* Opera 10.5+ */
+  -webkit-transition: all 0.5s ease-in-out;  /* Saf3.2+, Chrome */
+  -ms-transition: all 0.5s ease-in-out;  /* IE10? */
+  transition: all 0.5s ease-in-out; 
 }
 
 .project-button {
+  z-index: 999;
+  position: relative;
+  bottom: -150px;
+  opacity: 1;
   cursor: pointer;
   display: inline-block;
-  color: #660066;
+  color: #FFFFFF;
   margin: 5px;
   margin-top: 5%;
-  padding: 5px;
+  padding: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-transform: uppercase;
-  border: 2px #660066 solid;
+  border: 2px #FFFFFF solid;
   border-radius: 5px;
   background-color: transparent;
-  transition: 0.2s all ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;  /* FF4+ */
+  -o-transition: all 0.5s ease-in-out;  /* Opera 10.5+ */
+  -webkit-transition: all 0.5s ease-in-out;  /* Saf3.2+, Chrome */
+  -ms-transition: all 0.5s ease-in-out;  /* IE10? */
+  transition: all 0.5s ease-in-out; 
 }
 
 .project-button:hover {
-  color: #F8F8F8;
-  background-color: #660066;
+  color: #660066
+  background-color: #F8F8F8;
+}
+
+.card {
+  position: relative;
+  width: 585px;
+  height: 438px;
+  margin: 20px auto;
+  perspective: 585px;
+  border-radius: 5px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front {
+  border: 1px solid #660066;
+}
+
+.back {
+  background: #660066;
+  color: white;
+  transform: rotateY( 180deg );
 }
 
 .project-img {
-  padding: 5%;
-  padding-bottom: 15%;
-  width: 80%;
+  border-radius: 5px;
+  padding: 25px;
+  max-width: 585px;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  z-index: 99;
+  margin: auto;
+  
+  
 }
+
+.project-img.meraki {
+  background: url('../img/projects/meraki-retina.gif');
+  background-size: contain;
+}
+
+.project-img.redempt {
+  background: url('../img/projects/redempt-retina.gif');
+  background-size: contain;
+}
+
+.project-img.converter {
+  background: url('../img/projects/numeric-converter-retina.png');
+  background-size: contain;
+}
+
+.project-img.tic-tac {
+  background: url('../img/projects/tic-tac-toe-game-retina.png');
+  background-size: contain;
+}
+
+.project-img.guse {
+  background: url('../img/projects/github-search-engine-retina.png');
+  background-size: contain;
+}
+
+.project-img.calculator {
+  background: url('../img/projects/react-calc-retina.png');
+  background-size: contain;
+}
+
+
 
 .about-me h1 {
   color: #FFF;
@@ -202,12 +302,14 @@ a {
   background-image: url("../img/grid-bg2.jpg");
   background-size: cover;
   background-blend-mode: multiply;
-
+  background-attachment: fixed;
 }
+
+
 
 .backdrop {
   border-radius: 50px;
-  padding: 40px 10px 40px 10px;
+  padding: 40px 20px 40px 20px;
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -216,7 +318,7 @@ a {
 }
 
 .contact-me {
-  min-height: 80vh;
+  min-height: 100vh;
   background-color: #D5B5F5;
   box-shadow: 1px 1px 10px #919090;
 }
@@ -227,6 +329,10 @@ i {
 
 i:hover {
   transform: scale(1.2);
+}
+
+.fa-arrow-left:before, .fa-arrow-right:before {
+  color: #807F7F;
 }
 
 .soc-med {
@@ -248,7 +354,95 @@ i:hover {
   text-transform: uppercase;
 }
 
+.slick-dots li button { 
+  font-size: 0; 
+} 
+
+.slick-arrow {
+  position: absolute;
+  top: 250px;
+  z-index: 999; 
+}
+
+.slick-arrow:hover {
+  cursor: pointer;
+}
+ 
+
+.slick-prev {
+  left: 50px;
+}
+
+.slick-next {
+  right: 50px;
+}
+
+@media screen and (max-width: 1260px) {
+  .slick-next {
+    right: 0px;
+  }
+
+  .slick-prev {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .project-img.meraki {
+    background: url('../img/projects/meraki-desktop.gif');
+    background-size: contain;
+  }
+
+  .project-img.redempt {
+    background: url('../img/projects/redempt-desktop.gif');
+    background-size: contain;
+  }
+  
+  .project-img.converter {
+    background: url('../img/projects/numeric-converter-desktop.png');
+    background-size: contain;
+  }
+  
+  .project-img.tic-tac {
+    background: url('../img/projects/tic-tac-toe-game-desktop.png');
+    background-size: contain;
+  }
+  
+  .project-img.guse {
+    background: url('../img/projects/github-search-engine-desktop.png');
+    background-size: contain;
+  }
+  
+  .project-img.calculator {
+    background: url('../img/projects/react-calc-desktop.png');
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .slick-next {
+    right: -50px;
+  }
+
+  .slick-prev {
+    left: -50px;
+  }
+
+  .card {
+    width: 531px;
+    height: 398px;
+  }
+
+  
+}
+
 @media screen and (max-width: 769px) {
+
+  .card {
+    width: 428px;
+    height: 320px;
+  }
 
   .desktop-menu {
     display: none;
@@ -351,7 +545,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 p {
@@ -360,4 +554,144 @@ p {
 
 
 
+}
+
+@media screen and (max-width: 760px) {
+
+  .project-img.meraki {
+    background: url('../img/projects/meraki-tablet.gif');
+    background-size: contain;
+  }
+
+  .project-img.redempt {
+    background: url('../img/projects/redempt-tablet.gif');
+    background-size: contain;
+  }
+  
+  .project-img.converter {
+    background: url('../img/projects/numeric-converter-tablet.png');
+    background-size: contain;
+  }
+  
+  .project-img.tic-tac {
+    background: url('../img/projects/tic-tac-toe-game-tablet.png');
+    background-size: contain;
+  }
+  
+  .project-img.guse {
+    background: url('../img/projects/github-search-engine-tablet.png');
+    background-size: contain;
+  }
+  
+  .project-img.calculator {
+    background: url('../img/projects/react-calc-tablet.png');
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 616px) {
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    width: 336px;
+    height: 248px;
+  }
+
+  .project-description {
+    top: 50px;
+  }
+
+  .project-button {
+    bottom: -75px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .card {
+    width: 240px;
+    height: 174px;
+  }
+
+  .slick-arrow {
+    top: 150px;
+  }
+
+  .project-description {
+    top: 0px;
+    font-size: 15px;
+  }
+
+  .project-button {
+    bottom: -25px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 206px;
+    height: 156px;
+  }
+  
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .project-img.meraki {
+    background: url('../img/projects/meraki-mobilehd.gif');
+    background-size: contain;
+  }
+
+  .project-img.redempt {
+    background: url('../img/projects/redempt-mobilehd.gif');
+    background-size: contain;
+  }
+  
+  .project-img.converter {
+    background: url('../img/projects/numeric-converter-mobilehd.png');
+    background-size: contain;
+  }
+  
+  .project-img.tic-tac {
+    background: url('../img/projects/tic-tac-toe-game-mobilehd.png');
+    background-size: contain;
+  }
+  
+  .project-img.guse {
+    background: url('../img/projects/github-search-engine-mobilehd.png');
+    background-size: contain;
+  }
+  
+  .project-img.calculator {
+    background: url('../img/projects/react-calc-mobilehd.png');
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 343px) {
+  .card {
+    width: 200px;
+    height: 148px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  .project-img.meraki {
+    background: url('../img/projects/meraki-mobileld.gif');
+    background-size: contain;
+  }
+
+  .project-img.redempt {
+    background: url('../img/projects/redempt-mobileld.gif');
+    background-size: contain;
+  }
 }

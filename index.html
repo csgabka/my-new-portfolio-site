@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Gabi C Web developer</title>
+    <title>Gabi - Web developer</title>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="style/index.css">
   </head>
   <body>
@@ -46,57 +47,127 @@
       <p class="portfolio-introduction">Below you can browse some of the projects I've been working on.</p>
 
     <!-- Portfolio example -->
+    <div class="portfolio-block">
 
-    <h2 class="project-title">Tic Tac Toe game</h2>
-    <hr />
-    <p class="project-description">Tic Tac Toe game built with React.</p>
-    <a href="https://github.com/csgabka/React-Tic-Tac-Toe" target="blank"><button class="project-button">View source code</button></a>
-    <a href="https://csgabka.github.io/React-Tic-Tac-Toe/" target="blank"><button class="project-button">Visit online</button></a>
-    <img class="project-img" src="img/projects/tic-tac-toe-react.jpg" alt="tictactoe" />
+      <div class="portfolio-item">
+        <h2 class="project-title">Meraki Consulting</h2>
+        <hr />
+        <div class="card">
+        <div class="content">
+          <div class="front">
+            <div class="project-img meraki"></div>
+          </div>
+          <div class="back">
+          <p class="project-description">Wordpress, HTML5, CSS3, JQuery, PHP</p>
+          <a href="http://meraki-consult.com/" target="blank"><button class="project-button">Visit online</button></a>
+          </div>
+        </div>
+      </div>
+      </div>
 
-    <h2 class="project-title">Github User Search Engine</h2>
-    <hr />
-    <p class="project-description">Search Engine built with React, uses Github API to fetch Github user information.</p>
-    <a href="https://github.com/csgabka/Github-profile-search-engine" target="blank"><button class="project-button">View source code</button></a>
-    <a href="https://csgabka.github.io/Github-profile-search-engine/" target="blank"><button class="project-button">Visit online</button></a>
-    <img class="project-img" src="img/projects/searchengine.jpg" alt="searchengine" />
+      
+      <div class="portfolio-item">
+        
+          <h2 class="project-title">Redempt Resourcing</h2>
+          <hr />
+          <div class="card">
+          <div class="content">
+            <div class="front">
+              <div class="project-img redempt"></div>
+            </div>
+            <div class="back">
+            <p class="project-description">Wordpress, HTML5, CSS3, JQuery, PHP</p>
+            <!--<a href="http://meraki-consult.com/" target="blank"><button class="project-button">Visit online</button></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <h2 class="project-title">Quote Machine</h2>
-    <hr />
-    <p class="project-description">A new quote is loaded with every request. It is using Fav Quotes API to fetch randomly selected quotes. Built with React.</p>
-    <a href="https://github.com/csgabka/quote-machine" target="blank"><button class="project-button">View source code</button></a>
-    <a href="https://csgabka.github.io/quote-machine/" target="blank"><button class="project-button">Visit online</button></a>
-    <img class="project-img" src="img/projects/quote.jpg" alt="quotemachine" />
+    
 
-      <h2 class="project-title">React Calculator</h2>
-      <hr />
-      <p class="project-description">Calculator built with React</p>
-      <a href="https://github.com/csgabka/React-calculator" target="blank"><button class="project-button">View source code</button></a>
-      <a href="https://csgabka.github.io/React-calculator/" target="blank"><button class="project-button">Visit online</button></a>
-      <img class="project-img" src="img/projects/calculator.jpg" alt="calculator" />
-
+    <div class="portfolio-item">
       <h2 class="project-title">Arabic to Roman Numeric Converter</h2>
       <hr />
-      <p class="project-description">Built with HTML5, CSS3, JavaScript</p>
-      <a href="https://github.com/csgabka/ArabicToRomanNumeralConverter" target="blank"><button class="project-button">View source code</button></a>
-      <a href="https://csgabka.github.io/ArabicToRomanNumeralConverter/" target="blank"><button class="project-button">Visit online</button></a>
-      <img class="project-img" src="img/projects/arabicromanconverter.jpg" alt="converter" />
-
-      <h2 class="project-title">Minimalist design portfolio site</h2>
-      <hr />
-      <p class="project-description">This minimalist theme design was created for a portfolio site. Built with HTML5, CSS3, JavaScript</p>
-      <a href="https://github.com/csgabka/minimalist-portfolio" target="blank"><button class="project-button">View source code</button></a>
-      <a href="https://csgabka.github.io/minimalist-portfolio/" target="blank"><button class="project-button">Visit online</button></a>
-      <img class="project-img" src="img/projects/minimalist.jpg" alt="minimalist-portfolio" />
+      <div class="card">
+      <div class="content">
+        <div class="front">
+          <div class="project-img converter"></div>
+        </div>
+        <div class="back">
+          <p class="project-description">HTML5, CSS3, Vanilla JS</p>
+          <a href="https://github.com/csgabka/ArabicToRomanNumeralConverter" target="blank"><button class="project-button">View source code</button></a>
+          <a href="https://csgabka.github.io/ArabicToRomanNumeralConverter/" target="blank"><button class="project-button">Visit online</button></a>
+        </div>
+      </div>
     </div>
+    </div>
+  
+
+    <div class="portfolio-item">
+      <h2 class="project-title">Tic Tac Toe game</h2>
+      <hr />
+      <div class="card">
+      <div class="content">
+        <div class="front">
+          <div class="project-img tic-tac"></div>
+        </div>
+        <div class="back">
+          <p class="project-description">React</p>
+          <a href="https://github.com/csgabka/React-Tic-Tac-Toe" target="blank"><button class="project-button">View source code</button></a>
+          <a href="https://csgabka.github.io/React-Tic-Tac-Toe/" target="blank"><button class="project-button">Visit online</button></a>
+       
+        </div>
+       </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <h2 class="project-title">Github User Search Engine</h2>
+      <hr />
+      <div class="card">
+      <div class="content">
+        <div class="front">
+          <div class="project-img guse"></div>
+        </div>
+        <div class="back">
+          <p class="project-description">React</p>
+          <a href="https://github.com/csgabka/Github-profile-search-engine" target="blank"><button class="project-button">View source code</button></a>
+          <a href="https://csgabka.github.io/Github-profile-search-engine/" target="blank"><button class="project-button">Visit online</button></a>
+        </div>
+         </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <h2 class="project-title">Calculator</h2>
+      <hr />
+      <div class="card">
+        <div class="content">
+          <div class="front">
+            <div class="project-img calculator"></div>
+          </div>
+          <div class="back">
+            <p class="project-description">React</p>
+            <a href="https://github.com/csgabka/React-calculator" target="blank"><button class="project-button">View source code</button></a>
+            <a href="https://csgabka.github.io/React-calculator" target="blank"><button class="project-button">Visit online</button></a>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    
+    </div>
+
+      
     <!-- About me -->
     <div class="about-me" id="about-me">
         <div class="backdrop">
         <h1 class="section-title">About me</h1>
         <br />
-        <p class="about">Hi! My name is Gabi. I am a Computer Engineer (BSc) graduate (2010). After graduating, I started working in Hospitality as a General Manager and stayed on this path for the past 10 years.</p><br />
-        <p class="about">In 2020, I started building on top of the knowledge I have gained during university years and I have started learning about Web Development - focusing mainly on Front End skills.</p><br />
-        <p class="about">My continuously expanding skillset currently consist of the following technologies: <br />HTML, CSS, SASS, Bootstrap, JavaScript, React, Node.js, Firebase, Git, NPM, Command Line, Wordpress</p>
+        <p class="about">Hello there! My name is Gabi. I am a Web Developer. </p>
+        <p class="about">I have commercial experience using the following technologies: HTML5, CSS3, SASS, Bootstrap, JavaScript, JQuery, Wordpress, Expression Engine. I have also worked with React on some personal projects. I am interested in anything related to Web Development and I take every opportunity to learn and expand my skillset. </p>
       </div>
     </div>
     <!-- Contact me -->
@@ -109,16 +180,17 @@
           <a class="soc-med" href="https://www.facebook.com/csgab" target="blank"><i class="fa fa-lg fa-facebook-square"></i></a>
           <a class="soc-med" href="https://www.instagram.com/csgabka87/" target="blank"><i class="fa fa-lg fa-instagram" aria-hidden="true"></i></a>
           <a class="soc-med" href="https://github.com/csgabka" target="blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i></i></a>
-          <a class="soc-med" href="https://www.freecodecamp.org/fcc88431d77-4f70-43a8-bc84-06a42f01532d" target="blank"><i class="fa fa-lg fa-free-code-camp" aria-hidden="true"></i></i></a>
         </div>
     </div>
 
     <!-- Copyrights -->
     <div class="copyright">
-      <p class="footer">© 2020 Gabriella Csernus. Made in London</p>
+      <p class="footer">© 2021 Gabriella Csernus. Made in London</p>
     </div>
     <script defer src="script/smoothscroll.min.js"></script>
     <script src="https://use.fontawesome.com/bf9404ecbf.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>

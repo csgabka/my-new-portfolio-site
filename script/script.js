@@ -76,3 +76,16 @@ scrollToElement = (whereTo) => {
     behavior: 'smooth'
   });
 }
+
+$(document).ready(function(){
+  $('.portfolio-block').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    dots: false,
+    infinite: true,
+    prevArrow: '<div class="slick-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>',
+    nextArrow: '<div class="slick-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>'
+  });
+});
