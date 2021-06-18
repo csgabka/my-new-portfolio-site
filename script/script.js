@@ -22,6 +22,7 @@ ready(event => {
     document.getElementsByTagName("html")[0].style.visibility = "visible";
 })
 
+
 window.onscroll = () => {
   showIntroElements();
   updateNavigationDesign();
@@ -89,3 +90,5 @@ $(document).ready(function(){
     nextArrow: '<div class="slick-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>'
   });
 });
+
+

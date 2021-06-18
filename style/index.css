@@ -83,6 +83,7 @@ hr {
 }
 
 .multi-button {
+  font-size: 13px;
   font-style: bold;
   text-transform: uppercase;
   color: #FFF;
@@ -92,6 +93,7 @@ hr {
   background-color: transparent;
   border-radius: 50px;
   transition: 0.5s all ease-in-out;
+
 }
 
 .multi-button:hover {
@@ -102,12 +104,21 @@ hr {
 
 .box {
   min-height: 100vh;
-  background-image: url("../img/intro.jpg");
-  background-color: #660066;
+  background-image: linear-gradient(#caa0ff, #660066, #301934);
   color: #FFF;
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center center;
+}
+
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
 }
 
 .intro {
@@ -128,7 +139,7 @@ hr {
 }
 
 a {
-  transition: 0.5s all ease-in-out;
+  transition: 0.1s all ease-in-out;
 }
 
 /* Portfolio */
@@ -198,7 +209,7 @@ a {
 }
 
 .project-button:hover {
-  color: #660066
+  color: #660066;
   background-color: #F8F8F8;
 }
 
@@ -234,6 +245,10 @@ a {
   color: #03446A;
   text-align: center;
   border-radius: 5px;
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  visibility:visible;
   backface-visibility: hidden;
 }
 
@@ -247,13 +262,14 @@ a {
   transform: rotateY( 180deg );
 }
 
+
 .project-img {
   border-radius: 5px;
   padding: 25px;
   max-width: 585px;
   width: 100%;
   height: 100%;
-  background-size: contain;
+  background-size: cover;
   z-index: 99;
   margin: auto;
   
@@ -262,32 +278,32 @@ a {
 
 .project-img.meraki {
   background: url('../img/projects/meraki-retina.gif');
-  background-size: contain;
+  background-size: cover;
 }
 
 .project-img.redempt {
   background: url('../img/projects/redempt-retina.gif');
-  background-size: contain;
+  background-size: cover;
 }
 
 .project-img.converter {
   background: url('../img/projects/numeric-converter-retina.png');
-  background-size: contain;
+  background-size: cover;
 }
 
 .project-img.tic-tac {
   background: url('../img/projects/tic-tac-toe-game-retina.png');
-  background-size: contain;
+  background-size: cover;
 }
 
 .project-img.guse {
   background: url('../img/projects/github-search-engine-retina.png');
-  background-size: contain;
+  background-size: cover;
 }
 
 .project-img.calculator {
   background: url('../img/projects/react-calc-retina.png');
-  background-size: contain;
+  background-size: cover;
 }
 
 
@@ -308,6 +324,8 @@ a {
 
 
 .backdrop {
+  max-width: 800px;
+  margin: auto;
   border-radius: 50px;
   padding: 40px 20px 40px 20px;
   background: rgba(0, 0, 0, 0.6);
@@ -368,47 +386,46 @@ i:hover {
   cursor: pointer;
 }
 
-
-@media screen and (max-width: 1260px) {
-  .slick-next {
-    right: 0px;
-  }
-
-  .slick-prev {
-    left: 0px;
-  }
+.slick-next {
+  right: 0px;
 }
+
+.slick-prev {
+  left: 0px;
+}
+
+
 
 @media screen and (max-width: 1024px) {
 
   .project-img.meraki {
     background: url('../img/projects/meraki-desktop.gif');
-    background-size: contain;
+    background-size: cover;
   }
 
   .project-img.redempt {
     background: url('../img/projects/redempt-desktop.gif');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.converter {
     background: url('../img/projects/numeric-converter-desktop.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.tic-tac {
     background: url('../img/projects/tic-tac-toe-game-desktop.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.guse {
     background: url('../img/projects/github-search-engine-desktop.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.calculator {
     background: url('../img/projects/react-calc-desktop.png');
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -549,32 +566,32 @@ p {
 
   .project-img.meraki {
     background: url('../img/projects/meraki-tablet.gif');
-    background-size: contain;
+    background-size: cover;
   }
 
   .project-img.redempt {
     background: url('../img/projects/redempt-tablet.gif');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.converter {
     background: url('../img/projects/numeric-converter-tablet.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.tic-tac {
     background: url('../img/projects/tic-tac-toe-game-tablet.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.guse {
     background: url('../img/projects/github-search-engine-tablet.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.calculator {
     background: url('../img/projects/react-calc-tablet.png');
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -651,32 +668,32 @@ p {
 
   .project-img.meraki {
     background: url('../img/projects/meraki-mobilehd.gif');
-    background-size: contain;
+    background-size: cover;
   }
 
   .project-img.redempt {
     background: url('../img/projects/redempt-mobilehd.gif');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.converter {
     background: url('../img/projects/numeric-converter-mobilehd.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.tic-tac {
     background: url('../img/projects/tic-tac-toe-game-mobilehd.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.guse {
     background: url('../img/projects/github-search-mobilehd.png');
-    background-size: contain;
+    background-size: cover;
   }
   
   .project-img.calculator {
     background: url('../img/projects/react-calc-mobilehd.png');
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -691,11 +708,11 @@ p {
 
   .project-img.meraki {
     background: url('../img/projects/meraki-mobileld.gif');
-    background-size: contain;
+    background-size: cover;
   }
 
   .project-img.redempt {
     background: url('../img/projects/redempt-mobileld.gif');
-    background-size: contain;
+    background-size: cover;
   }
 }
