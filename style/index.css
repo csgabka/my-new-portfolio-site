@@ -322,6 +322,7 @@ a {
   background-color: #a70aa7;
   background-image: url("../img/grid-bg2.jpg");
   background-size: cover;
+  background-repeat: repeat;
   background-blend-mode: multiply;
   background-attachment: fixed;
 }
